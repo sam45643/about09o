@@ -230,43 +230,6 @@ const Footer = props => {
   Social Links Component
  ***********************/
 
-const SocialLinks = props => {
-  return /*#__PURE__*/(
-    React.createElement("div", { className: "social" }, /*#__PURE__*/
-    React.createElement("a", {
-      href: "https://twitter.com/yagoestevez",
-      target: "_blank",
-      rel: "noopener noreferrer",
-      title: "Link to author's Twitter profile" },
-
-    ' ', /*#__PURE__*/
-    React.createElement("i", { className: "fab fa-twitter" })), /*#__PURE__*/
-
-    React.createElement("a", {
-      id: "profile-link",
-      href: "https://github.com/yagoestevez",
-      target: "_blank",
-      rel: "noopener noreferrer",
-      title: "Link to author's GitHub Profile" },
-
-    ' ', /*#__PURE__*/
-    React.createElement("i", { className: "fab fa-github" })), /*#__PURE__*/
-
-    React.createElement("a", {
-      href: "https://codepen.io/yagoestevez",
-      target: "_blank",
-      rel: "noopener noreferrer",
-      title: "Link to author's Codepen Profile" },
-
-    ' ', /*#__PURE__*/
-    React.createElement("i", { className: "fab fa-codepen" }))));
-
-
-
-};
-
-
-
 /***********************
   Main Component
  ***********************/
