@@ -1,5 +1,3 @@
-/* Made by Yago Estévez (Twitter: @yagoestevez.com) */
-
 *,
 *::before,
 *::after,
@@ -35,16 +33,6 @@ a:hover,
 a:active {
   color: #f300b4;
 }
-
-
-
-
-
-
-
-
-
-
 /*****************
  *****************
     MENU STYLES
@@ -275,17 +263,6 @@ a:active {
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 /*****************
  *****************
     NAV STYLES
@@ -319,7 +296,6 @@ a:active {
   color: #fafafa;
   cursor: default;
 }
-
 /***** Menu Button *****/
 .menu-button {
   position: relative;
@@ -379,17 +355,6 @@ a:active {
     background: #181d23aa;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 /*****************
  *****************
    HEADER STYLES
@@ -610,16 +575,6 @@ a:active {
     width: 100%;
   }
 }
-
-
-
-
-
-
-
-
-
-
 /*****************
  *****************
    ABOUT STYLES
@@ -723,22 +678,13 @@ a:active {
   }
 }
 
-
-
-
-
-
-
-
-
-
 /*****************
  *****************
   PROJECTS STYLES
  *****************
  *****************/
 
-#projects {
+/*#projects {
   min-height: 100vh;
   font-size: 1.4rem;
   position: relative;
