@@ -230,15 +230,15 @@ const Projects = props => {
     React.createElement("div", { className: "projects-wrapper" }, /*#__PURE__*/
     React.createElement(Project, {
       title: "Anonymous Message Board.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/AnonMsgBoard.jpg',
-      tech: "js css react node",
-      link: "https://yagoestevez-anon-msg-board.glitch.me/",
-      repo: "https://github.com/yagoestevez/anonymous-message-board" }, /*#__PURE__*/
+      img: ' ',
+      tech: " ",
+      link: " ",
+      repo: " " }, /*#__PURE__*/
 
-    React.createElement("small", null, "Built using Node, Express, MongoDB, CSS + Bulma, React.js and React Router."), /*#__PURE__*/
+    React.createElement("small", null, " "), /*#__PURE__*/
 
 
-    React.createElement("p", null, "This is a full-stack website that I made which lets the users read and post anonymous messages and replies.")), /*#__PURE__*/
+    React.createElement("p", null, " ")), /*#__PURE__*/
 
 
 
