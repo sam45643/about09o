@@ -1086,6 +1086,7 @@ footer {
   height: 150px;
   background: #fafafa;
   z-index: 0;
+  padding-top: 2rem;
 }
 
 footer .wrapper {
@@ -1095,6 +1096,7 @@ footer .wrapper {
   max-width: 1400px;
   align-items: center;
   justify-content: space-between;
+  padding-top: 2rem;
 }
 
 @media only screen and (max-width: 649px) {
@@ -1104,5 +1106,6 @@ footer .wrapper {
 
   footer .wrapper h3 {
     padding-bottom: .8rem;
+    padding-top: 2rem;
   }
 }
