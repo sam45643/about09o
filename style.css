@@ -62,7 +62,17 @@ a:active {
 }
 
 .menu-container.active > .overlay {
-  animation: overlay-slide-in 300ms forwards 300ms;
+  -webkit-animation: overlay-slide-in 300ms forwards 300ms;
+          animation: overlay-slide-in 300ms forwards 300ms;
+}
+
+@-webkit-keyframes overlay-slide-in {
+  from {
+    width: calc( 100vw - 120px );
+  }
+  to {
+    width: 0;
+  }
 }
 
 @keyframes overlay-slide-in {
@@ -75,7 +85,19 @@ a:active {
 }
 
 .menu-container > .overlay {
-  animation: overlay-slide-out 300ms forwards;
+  -webkit-animation: overlay-slide-out 300ms forwards;
+          animation: overlay-slide-out 300ms forwards;
+}
+
+@-webkit-keyframes overlay-slide-out {
+  from {
+    left: 0;
+    width: 0;
+  }
+  to {
+    left: 0;
+    width: calc( 100vw - 120px );
+  }
 }
 
 @keyframes overlay-slide-out {
@@ -121,7 +143,23 @@ a:active {
 }
 
 .menu-container.deactive {
-  animation: fade-out 600ms forwards;
+  -webkit-animation: fade-out 600ms forwards;
+          animation: fade-out 600ms forwards;
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+    z-index: 999;
+  }
+  50% {
+    opacity: 1;
+    z-index: 999;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
 }
 
 @keyframes fade-out {
@@ -140,7 +178,19 @@ a:active {
 }
 
 .menu-container.active {
-  animation: fade-in 300ms forwards;
+  -webkit-animation: fade-in 300ms forwards;
+          animation: fade-in 300ms forwards;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+    z-index: -1;
+  }
+  to {
+    opacity: 1;
+    z-index: 999;
+  }
 }
 
 @keyframes fade-in {
@@ -159,12 +209,24 @@ a:active {
 .menu-container .social {
   margin-left: -80px;
   opacity: 0;
-  animation: slide-out 200ms forwards;
+  -webkit-animation: slide-out 200ms forwards;
+          animation: slide-out 200ms forwards;
 }
 
 .menu-container ul {
   list-style-type: none !important;
   font-size: 3rem;
+}
+
+@-webkit-keyframes slide-out {
+  from {
+    opacity: 1;
+    margin-left: 0px;
+  }
+  to {
+    opacity: 0;
+    margin-left: -80px;
+  }
 }
 
 @keyframes slide-out {
@@ -180,7 +242,19 @@ a:active {
 
 .menu-container.active ul,
 .menu-container.active .social {
-  animation: slide-in 300ms forwards 600ms;
+  -webkit-animation: slide-in 300ms forwards 600ms;
+          animation: slide-in 300ms forwards 600ms;
+}
+
+@-webkit-keyframes slide-in {
+  from {
+    opacity: 0;
+    margin-left: -80px;
+  }
+  to {
+    opacity: 1;
+    margin-left: 0;
+  }
 }
 
 @keyframes slide-in {
@@ -248,7 +322,17 @@ a:active {
   }
   
   .menu-container.active > .overlay {
-    animation: overlay-slide-in 300ms forwards 300ms;
+    -webkit-animation: overlay-slide-in 300ms forwards 300ms;
+            animation: overlay-slide-in 300ms forwards 300ms;
+  }
+  
+  @-webkit-keyframes overlay-slide-in {
+    from {
+      width: 100vw;
+    }
+    to {
+      width: 0;
+    }
   }
   
   @keyframes overlay-slide-in {
@@ -261,7 +345,19 @@ a:active {
   }
   
   .menu-container > .overlay {
-    animation: overlay-slide-out 300ms forwards;
+    -webkit-animation: overlay-slide-out 300ms forwards;
+            animation: overlay-slide-out 300ms forwards;
+  }
+  
+  @-webkit-keyframes overlay-slide-out {
+    from {
+      left: 0;
+      width: 0;
+    }
+    to {
+      left: 0;
+      width: 100vw;
+    }
   }
   
   @keyframes overlay-slide-out {
@@ -416,7 +512,18 @@ a:active {
   min-height: 100vh;
   z-index: -1;
   opacity: 0;
-  animation: stars-move-in 1000ms 300ms forwards;
+  -webkit-animation: stars-move-in 1000ms 300ms forwards;
+          animation: stars-move-in 1000ms 300ms forwards;
+}
+
+@-webkit-keyframes stars-move-in {
+  from {
+    background-position-y: -100px;
+  }
+  to {
+    opacity: 1;
+    background-position-y: 0;
+  }
 }
 
 @keyframes stars-move-in {
@@ -438,8 +545,19 @@ a:active {
   width: 100%;
   height: 80%;
   opacity: 0;
-  animation: forest-move-in 1000ms 500ms forwards;
+  -webkit-animation: forest-move-in 1000ms 500ms forwards;
+          animation: forest-move-in 1000ms 500ms forwards;
   border-bottom: 300px solid #181d23;
+}
+
+@-webkit-keyframes forest-move-in {
+  from {
+    background-position-y: 150%;
+  }
+  to {
+    opacity: 1;
+    background-position-y: 100%;
+  }
 }
 
 @keyframes forest-move-in {
@@ -460,7 +578,18 @@ a:active {
   width: 50%;
   height: 50%;
   opacity: 0;
-  animation: silhouette-move-in 1000ms 800ms forwards;
+  -webkit-animation: silhouette-move-in 1000ms 800ms forwards;
+          animation: silhouette-move-in 1000ms 800ms forwards;
+}
+
+@-webkit-keyframes silhouette-move-in {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    opacity: 1;
+    background-position-x: 50%;
+  }
 }
 
 @keyframes silhouette-move-in {
@@ -485,7 +614,19 @@ a:active {
   height: 100%;
   z-index: -1;
   opacity: 0;
-  animation: moon-move-in 1.2s 1s forwards;
+  -webkit-animation: moon-move-in 1.2s 1s forwards;
+          animation: moon-move-in 1.2s 1s forwards;
+}
+
+@-webkit-keyframes moon-move-in {
+  from {
+    opacity: 0;
+    background-position: right 150%;
+  }
+  to {
+    opacity: 1;
+    background-position: top right;
+  }
 }
 
 @keyframes moon-move-in {
@@ -501,6 +642,8 @@ a:active {
 
 /* Copy and CTA */
 #welcome-section .container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   right: 0;
@@ -508,7 +651,18 @@ a:active {
   right: 25%;
   opacity: 0;
   transform: translate(0, -50%);
-  animation: text-fade-in 1000ms 800ms forwards;
+  -webkit-animation: text-fade-in 1000ms 800ms forwards;
+          animation: text-fade-in 1000ms 800ms forwards;
+}
+
+@-webkit-keyframes text-fade-in {
+  from {
+    right: 0;
+  }
+  to {
+    opacity: 1;
+    right: 25%;
+  }
 }
 
 @keyframes text-fade-in {
@@ -593,7 +747,18 @@ a:active {
     top: 10%;
     width: 80%;
     transform: translate(50%, 0);
-    animation: text-fade-in 1000ms 800ms forwards;
+    -webkit-animation: text-fade-in 1000ms 800ms forwards;
+            animation: text-fade-in 1000ms 800ms forwards;
+  }
+
+  @-webkit-keyframes text-fade-in {
+    from {
+      right: 0;
+    }
+    to {
+      opacity: 1;
+      right: 50%;
+    }
   }
 
   @keyframes text-fade-in {
@@ -632,7 +797,8 @@ a:active {
   font-size: 1.4rem;
   position: relative;
   background: #fafafa;
-  clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
+          clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
   z-index: 5;
   background: #fafafa url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Author_BG.jpg) center right no-repeat;
   background-attachment: fixed;
@@ -712,7 +878,8 @@ a:active {
 }
 @media only screen and (max-width: 949px) {
   #about {
-    clip-path: polygon(0 0, 20% 2%, 100% 0, 100% 100%, 80% 98%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 20% 2%, 100% 0, 100% 100%, 80% 98%, 0 100%);
+            clip-path: polygon(0 0, 20% 2%, 100% 0, 100% 100%, 80% 98%, 0 100%);
     background-position: top left;
     background-size: cover;
   }
@@ -737,6 +904,191 @@ a:active {
   PROJECTS STYLES
  *****************
  *****************/
+
+#projects {
+  min-height: 100vh;
+  font-size: 1.4rem;
+  position: relative;
+  background: #f0f0f0;
+  background: linear-gradient(215deg, #f0f0f0 0%,#fafafa 100%);
+  margin-top: -10rem;
+  z-index: 1;
+}
+
+#projects a,
+#projects a:visited {
+  color: #f300b4;
+}
+
+#projects a:hover,
+#projects a:active {
+  color: #252934;
+}
+
+/* Container */
+#projects .projects-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 12rem 5rem 8rem;
+}
+
+/* Heading */
+#projects .heading .title {
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+}
+
+#projects .heading .separator {
+  background: #f300b4;
+  width: 150px;
+  height: 2px;
+  margin: 1rem auto;
+}
+
+#projects .heading .subtitle {
+  font-size: 1.4rem;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+/* Single Project */
+#projects .project {
+  margin: 1rem auto;
+  width: 70%;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 2rem;
+}
+
+/* Project Image */
+#projects .project .project-link {
+  display: block;
+  margin: auto 0;
+  color: #252934;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #fafafa;
+  box-shadow: 0 20px 10px -10px #25293450;
+  transition: 300ms;
+}
+
+#projects .project .project-link:hover {
+  box-shadow: 0 50px 15px -30px #25293450;
+}
+
+#projects .project .project-link:hover > img {
+  filter: saturate(1);
+  transform: scale(1.05);
+}
+
+#projects .project .project-image {
+  width: 100%;
+  transform: scale(1.2);
+  filter: saturate(0);
+  transition: all 300ms;
+}
+
+/* Project Details */
+#projects .project .project-details {
+  margin: auto 0;
+}
+
+#projects .project-details .project-tile {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #f300b4;
+}
+
+/* Icons */
+#projects .project-details .icons {
+  margin: 0;
+  color: #252934;
+}
+
+#projects .project-details .icons i {
+  margin-right: .4rem;
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
+/* Text */
+#projects .project-details small {
+  font-style: italic;
+}
+
+#projects .project-details p {
+  margin: 1rem 0;
+}
+
+/* Buttons */
+#projects .project-details .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#projects .project-details .buttons a {
+  width: 49%;
+  padding: .5rem;
+  border: none;
+  border-bottom: 1px solid #f300b4;
+  color: #252934;
+  background: #fafafa;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#projects .project-details .buttons a:hover {
+  background: #f300b4;
+  color: #fafafa;
+}
+#projects .project-details .buttons i {
+  font-size: .8rem;
+  vertical-align: middle;
+  margin-left: .5rem;;
+}
+
+
+@media only screen and (max-width: 1149px) {
+  #projects .project {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media only screen and (max-width: 949px) {
+  #projects .project {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 649px) {
+  #projects {
+    background: #f0f0f0;
+  }
+  #projects .projects-container {
+    padding: 12rem 0 8rem;
+  }
+  #projects .project {
+    padding: 2rem 0;
+  }
+}
+
+
+
+
+
+
+
+
+
 /*****************
  *****************
    CONTACT STYLES
@@ -745,7 +1097,8 @@ a:active {
 
 #contact {
   background: #181d23 url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/envelope.svg?sanitize=true) no-repeat right;
-  clip-path: polygon(0 0, 20% 100px, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 20% 100px, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 20% 100px, 100% 0, 100% 100%, 0 100%);
   color: #fafafa;
   min-height: 100vh;
   width: 100%;
@@ -842,6 +1195,14 @@ input[type="submit"]:focus {
   background: #fafafa;
 }
 
+::-moz-placeholder {
+  color: #fafafa;
+}
+
+:-ms-input-placeholder {
+  color: #fafafa;
+}
+
 ::placeholder {
   color: #fafafa;
 }
@@ -867,7 +1228,8 @@ input[type="submit"]:focus {
 
 @media only screen and (max-width: 649px) {
   #contact {
-    clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 0 100%);
     padding: 0;
   }
 }
