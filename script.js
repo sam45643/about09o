@@ -1,4 +1,4 @@
-function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;} // Made by Yago Estévez (Twitter: @yagoestevez.com)
+ function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;} // Made by Yago Estévez (Twitter: @yagoestevez.com)
 
 
 /***********************
@@ -239,22 +239,6 @@ const Projects = props => {
 
 
     React.createElement("p", null, " ")), /*#__PURE__*/
-
-
-
-
-    React.createElement(Project, {
-      title: "Stock Price Checker.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/StockPriceChecker.jpg',
-      tech: "js node css",
-      link: "https://yagoestevez-stock-price-checker.glitch.me/",
-      repo: "https://github.com/yagoestevez/fcc-stock-price-checker" }, /*#__PURE__*/
-
-    React.createElement("small", null, "Built using Node, Express, MongoDB, JS + jQuery + Axios, CSS + Bootstrap and Pug."), /*#__PURE__*/
-
-
-    React.createElement("p", null, "Another full-stack website to check the current value of any requested stock in the market.")), /*#__PURE__*/
-
 
 
 
