@@ -222,26 +222,6 @@ const Projects = props => {
     ' ', /*#__PURE__*/
     React.createElement("a", { href: "https://www.freecodecamp.org/", target: "_blank", rel: "noopener noreferrer" }, "freeCodeCamp"), ", where I've been coding for almost 7 months non-stop until I completed all the projects required to get my Full-Stack Developer certification.")), /*#__PURE__*/
 
-
-
-
-
-
-    React.createElement("div", { className: "projects-wrapper" }, /*#__PURE__*/
-    React.createElement(Project, {
-      title: "Anonymous Message Board.",
-      img: ' ',
-      tech: " ",
-      link: " ",
-      repo: " " }, /*#__PURE__*/
-
-    React.createElement("small", null, " "), /*#__PURE__*/
-
-
-    React.createElement("p", null, " ")), /*#__PURE__*/
-
-
-
     React.createElement(Project, {
       title: "Personal Library.",
       img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/PersonalLibrary.jpg',
