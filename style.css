@@ -802,7 +802,8 @@ a:active {
   z-index: 5;
   background: #fafafa url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Author_BG.jpg) center right no-repeat;
   background-attachment: fixed;
-   margin-bottom: 0;
+  margin-bottom: 0;
+ 
 }
 
 #about .wrapper {
@@ -1087,6 +1088,7 @@ footer {
   background: #fafafa;
   z-index: 0;
   padding-top: 2rem;
+  margin-top: 0;
 }
 
 footer .wrapper {
