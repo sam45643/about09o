@@ -1104,7 +1104,7 @@ footer .wrapper {
     flex-direction: column;
   }
 
-  footer .wrapper h3 {
+  footer .wrapper h2 {
     padding-bottom: .8rem;
     padding-top: 2rem;
   }
