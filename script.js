@@ -177,11 +177,32 @@ const Project = props => {
   const repo = props.repo || 'http://';
 
   return /*#__PURE__*/(
-    React.createElement("div", { className: " " }, /*#__PURE__*/
-    React.createElement("a", { className: " ",  }, /*#__PURE__*/
-    React.createElement("img", { className: " ", })), /*#__PURE__*/
+    React.createElement("div", { className: "project" }, /*#__PURE__*/
+    React.createElement("a", { className: "project-link", href: link, target: "_blank", rel: "noopener noreferrer" }, /*#__PURE__*/
+    React.createElement("img", { className: "project-image", src: props.img, alt: 'Screenshot of ' + props.title })), /*#__PURE__*/
 
-    };
+    React.createElement("div", { className: "project-details" }, /*#__PURE__*/
+    React.createElement("div", { className: "project-tile" }, /*#__PURE__*/
+    React.createElement("p", { className: "icons" },
+    props.tech.split(' ').map((t) => /*#__PURE__*/
+    React.createElement("i", { className: tech[t], key: t }))),
+
+
+    props.title, ' '),
+
+    props.children, /*#__PURE__*/
+    React.createElement("div", { className: "buttons" }, /*#__PURE__*/
+    React.createElement("a", { href: repo, target: "_blank", rel: "noopener noreferrer" }, "View source ", /*#__PURE__*/
+    React.createElement("i", { className: "fas fa-external-link-alt" })), /*#__PURE__*/
+
+    React.createElement("a", { href: link, target: "_blank", rel: "noopener noreferrer" }, "Try it Live ", /*#__PURE__*/
+    React.createElement("i", { className: "fas fa-external-link-alt" }))))));
+
+
+
+
+
+};
 
 
 
